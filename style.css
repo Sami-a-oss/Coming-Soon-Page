@@ -1,0 +1,91 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(background.png);
+  background-size: cover;
+}
+
+.container {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  height: 68%;
+  justify-content: space-between;
+  /* background-color: green; */
+}
+
+.logo {
+  margin-top: 1.4rem;
+}
+.logo img {
+  height: 2.5rem;
+}
+
+.allText {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.para p {
+  font-family: 1rem;
+}
+.heading h1 {
+  font-size: 2.99rem;
+}
+#launch {
+  color: burlywood;
+}
+
+.time {
+  display: flex;
+  gap: 2rem;
+}
+.time p {
+  font-size: 3rem;
+}
+
+
+.btnContainer {
+  margin-top: 1rem;
+}
+.btnContainer button {
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btnContainer button img {
+  height: 15px;
+  margin-left: 0.5rem;
+}
+
+#rocket {
+  width: 250px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+  0%{
+    bottom: 0;
+    opacity: 0;
+  }
+  100%{
+    bottom: 105%;
+    opacity: 1;
+  }
+}
